@@ -1,0 +1,14 @@
+# Generated from pyproject.toml dependencies for native OpenBSD install
+# (replaces uv sync)
+beautifulsoup4>=4.14.3
+bleach>=6.3.0
+bleach-allowlist>=1.0.3
+django>=6.0
+djangorestframework>=3.16.1
+huey>=2.5.5
+markdown>=3.10
+mozilla-django-oidc>=5.0.2
+requests>=2.32.5
+supervisor>=4.3.0
+waybackpy>=3.0.6
+gunicorn>=23.0.0
