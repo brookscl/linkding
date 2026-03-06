@@ -49,8 +49,13 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "huey.contrib.djhuey",
-    "mozilla_django_oidc",
 ]
+
+try:
+    import mozilla_django_oidc  # noqa: F401
+    INSTALLED_APPS.append("mozilla_django_oidc")
+except ImportError:
+    pass
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
